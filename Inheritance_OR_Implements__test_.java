@@ -1,3 +1,10 @@
+/*
+Taking Notice of : Liskov Replacement Princeple.
+	SuperClass instantiation = new subClass1();
+	SuperClass instantiation = new subClass2();  
+	instantiation should have the permition for accessing all the methods in subClass1 AND subClass2.
+*/
+
 
 public class Inheritance_OR_Implements__test_{
 	public static void main(String []args){
