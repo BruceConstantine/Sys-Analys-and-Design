@@ -12,7 +12,7 @@ public class Inheritance_OR_Implements__test_{
 	public static void main(String []args){
 		//Depend on Concrete Class 
 		SuperClass instantiation = new SubClass();
-		instantiation.output_num(1);
+		instantiation.output_num(1);		// The first output_num(int i) invoked is in subClass.
 		//instantiation.output_num(1,2);	// When inheritance used for subclass additional method invoked, cannot do that. Coz you can't invoke the method in subClass but not in Super Class.
 		
 		
@@ -40,8 +40,11 @@ class SuperClass{
 }
 class SubClass extends SuperClass {
 	SubClass(){}
-	protected void test(){		// test() in super class is overrided in sub class.
+	protected void test(){			// test() in super class is overrided in sub class.
 		System.out.println("Md 'test()' in __SubClass__ Invoked.");
+	}
+	protected void output_num(int i){	// override
+		System.out.println("subClass output_num(int i) Invoked.");
 	}
 	protected void output_num(int i, int j){
 		System.out.println("\n**"+ i +" \t __"+ j + "***_\n" +"**\nMd 'output_num( int i )' in __Super Class Invoked.");
