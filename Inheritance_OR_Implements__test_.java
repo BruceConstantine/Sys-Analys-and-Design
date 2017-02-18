@@ -2,7 +2,9 @@
 Taking Notice of : Liskov Replacement Princeple.
 	SuperClass instantiation = new subClass1();
 	SuperClass instantiation = new subClass2();  
-	instantiation should have the permition for accessing all the methods in subClass1 AND subClass2.
+	Does the varable instantiation has the permition for accessing all the methods in subClass1 AND subClass2?
+		No 	(Probably)
+	
 */
 
 
